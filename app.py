@@ -16,7 +16,8 @@ import config
 app = Flask(__name__)
 app.config.from_object(os.environ["APP_SETTINGS"])
 
-toolbar = DebugToolbarExtension(app)
+if "Dev" in app.config["APP_SETTINGS"]: 
+    toolbar = DebugToolbarExtension(app)
 
 
 @app.route('/')

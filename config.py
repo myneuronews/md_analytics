@@ -15,4 +15,5 @@ class ProdConfiguration(BaseConfiguration):
 
 class DevConfiguration(BaseConfiguration):
     DEBUG = True
+    DEBUG_TB_INTERCEPT_REDIRECTS = False
     is_dev = True
