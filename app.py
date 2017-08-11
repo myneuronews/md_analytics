@@ -6,7 +6,7 @@ import os
 # Related Library Imports
 # -----------------------------------------------------------------------------
 from flask import Flask
-from flask_debugtoolbar import DebugToolbarExtension
+# from flask_debugtoolbar import DebugToolbarExtension
 # -----------------------------------------------------------------------------
 # Local Library Imports
 # -----------------------------------------------------------------------------
@@ -15,9 +15,7 @@ import config
 
 app = Flask(__name__)
 app.config.from_object(os.environ["APP_SETTINGS"])
-
-if "Dev" in app.config["APP_SETTINGS"]: 
-    toolbar = DebugToolbarExtension(app)
+#toolbar = DebugToolbarExtension(app)
 
 
 @app.route('/')
