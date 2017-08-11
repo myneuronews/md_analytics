@@ -1,0 +1,7 @@
+{
+  "name": "Twitter Analytics",
+  "description": "Python-Flask app, which displays Twitter account data analysis.",
+  "image": "heroku/python",
+  "repository": "https://git.heroku.com/md-analytics-stage.git",
+  "keywords": ["python", "heroku", "twitter"]
+}

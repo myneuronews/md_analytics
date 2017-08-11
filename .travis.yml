@@ -1,0 +1,28 @@
+language: python
+
+python:
+    - "2.7"
+    - "3.5"
+    - "3.6"
+    - "nightly"
+
+# command to install dependencies
+install: "pip install -r requirements/dev.txt"
+# command to run tests
+script: python -m pytest
+
+after_success:
+    - pip install coveralls
+    - coverage run --source=flask_oauthlib setup.py -q nosetests
+    - coveralls
+
+branches:
+  only:
+    - master
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: "1ca79ad3-5429-44ae-b174-72d5fc6ea08e"
+
+  app: md-analytics

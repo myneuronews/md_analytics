@@ -1,0 +1,30 @@
+# Everything needed in production
+
+# Flask
+Flask>=0.12.2
+
+
+# Database
+Flask-SQLAlchemy>=2.2
+psycopg2>=2.7.3
+SQLAlchemy>=1.1.11
+
+# Migrations
+Flask-Migrate>=2.0.4
+
+# Forms
+Flask-WTF>=0.14.2
+WTForms>=2.1
+
+# Deployment
+gunicorn>=19.1.1
+
+# Webpack
+flask-webpack>=0.1.0
+
+# Auth
+Flask-Login>=0.4.0
+Flask-Bcrypt>=0.7.1
+
+# Caching
+Flask-Caching>=1.0.0
