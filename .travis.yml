@@ -1,28 +1,20 @@
 language: python
-
 python:
-    - "2.7"
-    - "3.5"
-    - "3.6"
-    - "nightly"
-
-# command to install dependencies
-install: "pip install -r requirements/dev.txt"
-# command to run tests
+- '2.7'
+- '3.5'
+- '3.6'
+- nightly
+install: pip install -r requirements/dev.txt
 script: python -m pytest
-
 after_success:
-    - pip install coveralls
-    - coverage run --source=flask_oauthlib setup.py -q nosetests
-    - coveralls
-
+- pip install coveralls
+- coverage run --source=flask_oauthlib setup.py -q nosetests
+- coveralls
 branches:
   only:
-    - master
-
+  - master
 deploy:
   provider: heroku
   api_key:
-    secure: "1ca79ad3-5429-44ae-b174-72d5fc6ea08e"
-
+    secure: j6wSWWI9Exgdi5B1sST5gOR/mPzJFtllnQVHcB5DeinDpN/XdJUWIzfP5FJVDtUF1qM3N/gdnhN4JkEgeHLNY+vDjhtI9/k8qOn2Gs5yah8a8vSW3/+p4r/WUNQWb3oh6KXc9mzVgV6EFUvLa205WZz0MDF/XPTbTbJqbYKfJxVSjUtHKEo3mmigkjB3bqF8i3QoAmkZX99K3C7mNFrgcGVpeC0EQSgN9Iqdkprlfy8dI6clirwsW6kOIq7zvFIsDTHeBK2piz+lQTPf7yFwmdnxL77K9UwBECmf2IOCpNnNwVevOP/8v1BZGTNhpgvan1OX4t1cd1q2u1nSN3UvC2WDVoDFOAm8wiY4eqcit/GHe9vdaVZKXTjqZ6p7s5FMah1za5hFSdbTUuTkJzUy1mJm7BgU5jnhN2IAf7A+ZZpYrgTrHqxK7b8qfX7sBoVJzbam1gHR7/SAw7qlc43rnEmr/rgWQmnQmHbiaRP1snybY2C5mMTXy4kRTcscYyslqvzn+OLHu/CKyyVaLk9kFDuXL0CjbO++F+W7CRcv9ssngJMFAvTXiX7L34spZk73C1gAqYmptwJglCrtAI29XjKW6uxxsSFbZV368T9BDSzlcZ+nMbYjDtD7ghkjmoHnTq/4qrYghbuFLf4gIX3lPWRZjc9j0rNarNZqZ0F5nuQ=
   app: md-analytics
