@@ -3,5 +3,11 @@
   "description": "Python-Flask app, which displays Twitter account data analysis.",
   "image": "heroku/python",
   "repository": "https://github.com/mdyzma/md_analytics.git",
+  "env": {
+    "APP_SETTINGS":{
+      "description": "Application configuration set.",
+      "value": "conf.ProdConfiguration"
+    }
+  },
   "keywords": ["python", "heroku", "twitter"]
 }
