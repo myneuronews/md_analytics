@@ -1,15 +1,18 @@
-.. MD Analytics documentation master file, created by
-   sphinx-quickstart on Fri Aug 11 21:19:55 2017.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
 
-Welcome to MD Analytics's documentation!
-========================================
+Welcome to MD Analytics's
+=========================
+
+|travis|  |docs|
+
+================== =============
+**Last modified:** |today|
+================== =============
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
+   quickstart
 
 
 Indices and tables

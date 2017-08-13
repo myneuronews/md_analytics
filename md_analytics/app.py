@@ -6,22 +6,22 @@ import os
 # Related Library Imports
 # -----------------------------------------------------------------------------
 from flask import Flask
-# from flask_debugtoolbar import DebugToolbarExtension
 # -----------------------------------------------------------------------------
 # Local Library Imports
 # -----------------------------------------------------------------------------
-import config_app
+from md_analytics.settings import ProdConfig 
 
 
-app = Flask(__name__)
-app.config.from_object(os.environ["APP_SETTINGS"])
-#toolbar = DebugToolbarExtension(app)
+def create_app(config_object=ProdConfig):
+    """An application factory, see here: http://flask.pocoo.org/docs/patterns/appfactories/.
 
+    :param config_object: The configuration object to use.
+    """
+    app = Flask(__name__)
+    app.config.from_object(config_object)
 
-@app.route('/')
-def index():
-    return '<h1>Welcome to Social media analytic tool</h1>'
+    @app.route('/')
+    def index():
+        return '<h1>Welcome to Social media analytic tool</h1>'
 
-
-if __name__ == '__main__':
-    app.run()
+    return app
