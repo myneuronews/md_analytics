@@ -1,6 +1,6 @@
 """Test configs."""
-from twitter_analytics.app import create_app
-from config_app import DevConfiguration, ProdConfiguration
+from md_analytics.app import create_app
+from md_analytics.settings import DevConfig, ProdConfig, TestConfig
 
 
 def test_production_config():
@@ -16,3 +16,9 @@ def test_dev_config():
     app = create_app(DevConfig)
     assert app.config['ENV'] == 'dev'
     assert app.config['DEBUG'] is True
+
+
+def test_testing_config():
+    """Basic config"""
+    app = create_app(TestConfig)
+    assert app.config['ENV'] == 'test'
