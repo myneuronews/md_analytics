@@ -1,1 +1,1 @@
-web: gunicorn app:app
+web: gunicorn md_analytics.app:create_app\(\)
