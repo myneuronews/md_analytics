@@ -3,8 +3,8 @@ python:
 - '2.7'
 - '3.6'
 - nightly
-install: pip install -r requirements.txt
-script: python -m pytest --cov=md_analytics tests
+install: pip install -r requirements/dev.txt
+script: python -m pytest --cov=md_analytics tests/
 after_success:
 - pip install coveralls
 - coverage run --source=md_analysis -q nosetests
