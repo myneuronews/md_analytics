@@ -1,7 +1,7 @@
 # Everything needed in production
 
 # Flask
-Flask>=0.12.2
+Flask==0.12.2
 
 
 # Database
@@ -17,7 +17,7 @@ Flask>=0.12.2
 # WTForms>=2.1
 
 # Deployment
-gunicorn==19.1.1
+gunicorn==19.7.1
 
 # App command line
 Flask-Script==2.0.5

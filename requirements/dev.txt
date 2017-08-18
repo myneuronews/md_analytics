@@ -2,7 +2,7 @@
 -r prod.txt
 
 # Debug toolbar
-Flask-DebugToolbar>=0.10.1
+Flask-DebugToolbar==0.10.1
 
 # Testing
 pytest==3.2.1
