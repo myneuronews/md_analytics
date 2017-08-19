@@ -6,7 +6,7 @@
   "env": {
     "APP_SETTINGS":{
       "description": "Application configuration set.",
-      "value": "config_app.ProdConfiguration"
+      "value": "ProdConfig"
     }
   },
   "keywords": ["python", "heroku", "twitter"]
