@@ -1,6 +1,6 @@
 {
   "name": "Twitter Analytics",
-  "description": "Python-Flask app, which displays Twitter account data analysis.",
+  "description": "Python-Flask app, which shows Social-Media accounts data analysis in form of dashboard.",
   "image": "heroku/python",
   "repository": "https://github.com/mdyzma/md_analytics.git",
   "env": {
