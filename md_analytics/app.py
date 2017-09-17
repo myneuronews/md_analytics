@@ -5,7 +5,7 @@ import os
 # -----------------------------------------------------------------------------
 # Related Library Imports
 # -----------------------------------------------------------------------------
-from flask import Flask
+from flask import Flask, render_template
 # -----------------------------------------------------------------------------
 # Local Library Imports
 # -----------------------------------------------------------------------------
@@ -22,6 +22,6 @@ def create_app(config_object=ProdConfig):
 
     @app.route('/')
     def index():
-        return '<h1>Welcome to Social media analytic tool</h1>'
+        return render_template("index")
 
     return app
