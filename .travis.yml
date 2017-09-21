@@ -4,10 +4,10 @@ python:
 - '3.6'
 - nightly
 install: pip install -r requirements/dev.txt
-script: python -m pytest --cov=md_analytics tests/
+script: python -m pytest --cov=app tests/
 after_success:
 - pip install coveralls
-- coverage run --source=md_analysis -q nosetests
+- coverage run --source=app -q nosetests
 - coveralls
 branches:
   only:
