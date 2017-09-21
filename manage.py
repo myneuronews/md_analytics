@@ -13,8 +13,8 @@ from flask_script import Manager, Server
 # -----------------------------------------------------------------------------
 # Local Library Imports
 # -----------------------------------------------------------------------------
-from md_analytics.app import create_app
-from md_analytics.settings import DevConfig, ProdConfig
+from app.app import create_app
+from app.settings import DevConfig, ProdConfig
 
 HERE = os.path.abspath(os.path.dirname(__file__))
 TEST_PATH = os.path.join(HERE, 'tests')

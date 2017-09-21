@@ -1,6 +1,6 @@
 """Test configs."""
-from md_analytics.app import create_app
-from md_analytics.settings import DevConfig, ProdConfig, TestConfig
+from app.app import create_app
+from app.settings import DevConfig, ProdConfig, TestConfig
 
 
 def test_production_config():

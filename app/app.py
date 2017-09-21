@@ -9,7 +9,7 @@ from flask import Flask, render_template
 # -----------------------------------------------------------------------------
 # Local Library Imports
 # -----------------------------------------------------------------------------
-from md_analytics.settings import ProdConfig 
+from app.settings import ProdConfig 
 
 
 def create_app(config_object=ProdConfig):
