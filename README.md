@@ -5,7 +5,6 @@
 [![Build Status](https://travis-ci.org/mdyzma/md_analytics.svg?branch=master)](https://travis-ci.org/mdyzma/md_analytics)
 [![Documentation Status](https://readthedocs.org/projects/md-analytics/badge/?version=latest)](http://md-analytics.readthedocs.io/en/latest/?badge=latest)
 
-
 A Flask based app, which inspects social media accounts, displaying statistics, semantic analysis and friends/followers network graphs. followers of the followers of account authorized via Twitter. Can be deployed to Heroku.
 
 ## Usage
