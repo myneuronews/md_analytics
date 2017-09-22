@@ -3,16 +3,16 @@
 # -----------------------------------------------------------------------------
 import os
 # -----------------------------------------------------------------------------
-# Related Library Imports
+# Related Libraries Imports
 # -----------------------------------------------------------------------------
 from flask import Flask, render_template
+from flask_debugtoolbar import DebugToolbarExtension
 # -----------------------------------------------------------------------------
-# Local Library Imports
+# Local Imports
 # -----------------------------------------------------------------------------
-from app.settings import ProdConfig 
 
 
-def create_app(config_object=ProdConfig):
+def create_app(config_object=None):
     """An application factory, see here: http://flask.pocoo.org/docs/patterns/appfactories/.
 
     :param config_object: The configuration object to use.
@@ -20,8 +20,11 @@ def create_app(config_object=ProdConfig):
     app = Flask(__name__)
     app.config.from_object(config_object)
 
+    toolbar = DebugToolbarExtension(app)
+    app.logger.info("Debug toolbar activated")
+
     @app.route('/')
     def index():
-        return render_template("index")
+        return render_template("home.html")
 
     return app

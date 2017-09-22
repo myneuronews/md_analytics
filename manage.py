@@ -7,11 +7,11 @@
 import os
 
 # -----------------------------------------------------------------------------
-# Related Library Imports
+# Related Libraries Imports
 # -----------------------------------------------------------------------------
 from flask_script import Manager, Server
 # -----------------------------------------------------------------------------
-# Local Library Imports
+# Local Imports
 # -----------------------------------------------------------------------------
 from app.app import create_app
 from app.settings import DevConfig, ProdConfig

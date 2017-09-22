@@ -1,24 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!--[if lt IE 7]>  <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-    <!--[if IE 7]>     <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-    <!--[if IE 8]>     <html class="no-js lt-ie9"> <![endif]-->
-    <!--[if gt IE 8]><!-->
-        <html class="no-js">
-    <!--<![endif]-->
     <head>
         <title>{% block title %}{% endblock %} | MD-Analytics</title>
-        {% include {{ url_for('templates', filename='includes/head.html') }}
+        {% include "includes/head.html" ignore missing %}
         {% block seo %}{% endblock %}  
     </head>
     <body>
         <!-- Top navigation bar from include -->
-        {% include {{ url_for('templates', filename='includes/nav.html') }}
+        {% include "includes/nav.html" ignore missing %}
         <!-- Messages flashed to the user -->
-        {% include {{ url_for('templates', filename='includes/messages.html') }}
+        {% include "includes/messages.html'" ignore missing %}
         <!-- Main content block -->
         {% block content %}{% endblock %}
         <!-- Footer from include -->
-        {% include {{ url_for('templates', filename='includes/footer.html') }}
+        {% include "includes/footer.html" ignore missing %}
     </body>
 </html>
