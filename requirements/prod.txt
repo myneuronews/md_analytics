@@ -3,6 +3,8 @@
 # Flask
 Flask==0.12.2
 
+# Debug toolbar
+Flask-DebugToolbar==0.10.1
 
 # Database
 # Flask-SQLAlchemy>=2.2
