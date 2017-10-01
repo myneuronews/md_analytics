@@ -1,14 +1,87 @@
-<footer>
-    <div style="text-align:center;">
-        &copy   Michal Dyzma 2017
-    </div>
-</footer>
+    <!--Footer-->
+    <footer class="page-footer center-on-small-only elegant-color-dark">
 
-<!-- jQuery -->
-<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.2.1.slim.min.js') }}"></script>
-<!-- tether -->
-<script type="text/javascript" src="{{ url_for('static', filename='js/tether.min.js') }}"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
-<!-- MDB core JavaScript -->
-<script type="text/javascript" src="{{ url_for('static', filename='js/mdb.min.js') }}"></script>
+        <!--Footer Links-->
+        <div class="container-fluid">
+            <div class="row">
+
+                <!--First column-->
+                <div class="col-lg-3 col-md-6 ml-auto">
+                    <h5 class="titles font-bold mt-3 mb-4">ABOUT MD ANALYSIS</h5>
+                    <p>MD Analysis (MDA) is a web app dedicated to analyze public data produced by users of social media present today. </p>
+
+                    <p>Currently it is vital for everyones public profile to maintain integrity and keep away from hate speech or unprofessional behavior, when using social media services. MDA. This app analyzes our Social-Media profile and activity and gives comprehensive, dashboard-like summary.</p>
+                </div>
+                <!--/.First column-->
+
+                <hr class="w-100 clearfix d-sm-none">
+
+                <!--Second column-->
+                <div class="col-lg-2 col-md-6 ml-auto">
+                    <h5 class="title font-bold mt-3 mb-4">Other projects I was involved in</h5>
+                    <ul>
+                        <li><a href="#!">EarthCare</a></li>
+                        <li><a href="#!">SWARM</a></li>
+                        <li><a href="#!">Calcium</a></li>
+                        <li><a href="#!">Sleep</a></li>
+                    </ul>
+                </div>
+                <!--/.Second column-->
+
+                <hr class="w-100 clearfix d-sm-none">
+
+                <!--Third column-->
+                <div class="col-lg-2 col-md-6 ml-auto">
+                    <h5 class="title font-bold mt-3 mb-4">Useful Resources</h5>
+                    <ul>
+                        <li><a href="http://flask.pocoo.org">Flask</a></li>
+                        <li><a href="http://getbootstrap.com">Twitter Bootstrap</a></li>
+                        <li><a href="https://www.MDBootstrap.com">Material Design for Bootstrap</a></li>
+                        <li><a href="http://www.socialmediatoday.com/content/managing-your-social-media-footprint">Managing Social-Media Footprint</a></li>
+                    </ul>
+                </div>
+                <!--/.Third column-->
+
+                <hr class="w-100 clearfix d-sm-none">
+
+                <!--Fourth column-->
+                <div class="col-lg-2 col-md-6 ml-auto">
+                    <h5 class="title font-bold mt-3 mb-4">Find me on</h5>
+                    <ul>
+                        <li><a href="#!">Facebook</a></li>
+                        <li><a href="#!">Twitter</a></li>
+                        <li><a href="#!">LinkedIn</a></li>
+                        <li><a href="#!">Google+</a></li>
+                    </ul>
+                </div>
+                <!--/.Fourth column-->
+
+            </div>
+        </div>
+        <!--/.Footer Links-->
+
+        <hr>
+
+        <!--Call to action-->
+        <div class="call-to-action">
+            <h4 class="mb-5">MD ANALYSIS</h4>
+            <ul>
+                <li>
+                    <h5>Learn your Social-Media footprint now</h5></li>
+                <li><a href="{{ url_for('index') }}" class="btn btn-info" rel="nofollow">Sign up!</a></li>
+                <li><a href="#features" class="btn btn-default" rel="nofollow">Learn more</a></li>
+            </ul>
+        </div>
+        <!--/.Call to action-->
+
+        <!--Copyright-->
+        <div class="footer-copyright">
+            <div class="container-fluid">
+                © 2017 Copyright: <a href="https://www.MDBootstrap.com"> MDBootstrap.com &amp Michal Dyzma</a>
+
+            </div>
+        </div>
+        <!--/.Copyright-->
+
+    </footer>
+    <!--/.Footer-->

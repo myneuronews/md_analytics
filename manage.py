@@ -10,6 +10,7 @@ import os
 # Related Libraries Imports
 # -----------------------------------------------------------------------------
 from flask_script import Manager, Server
+from flask_script.commands import ShowUrls, Clean
 # -----------------------------------------------------------------------------
 # Local Imports
 # -----------------------------------------------------------------------------
@@ -34,6 +35,8 @@ def test():
 # now to run app type:
 # $ python manage.py runserver
 manager.add_command("runserver", Server())
+manager.add_command("show-urls", ShowUrls())
+manager.add_command("clean", Clean())
 
 
 if __name__ == "__main__":
